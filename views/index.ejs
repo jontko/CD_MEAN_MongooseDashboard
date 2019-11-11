@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <title>Mongoose Dashboard</title>
+</head>
+<body>
+        <div class="container">
+            <div class="head">
+                <h1>Mongoose Dashboard</h1>
+            </div>
+    
+            <div class="body">
+                <h1>Your Animals</h1>
+                <div class="scrollwindow">
+                        <% for(var animal of animals) { %>
+                        <h3>Kingdom:<%= animal.kingdom %></h3><br>
+                        <h3>Genus:<%= animal.genus %></h3><br>
+                        <h3>Species:<%= animal.species %></h3><br>
+                        <h3>Gender:<%= animal.gender %></h3><br>
+                        <h3>Age:<%= animal.age %></h3><br>
+                        <h3>ID:<%= animal.id %></h3><br>
+                        <a href="/animal/edit/<%= animal.id %>">Edit</a>
+                        <a href="/animal/delete/<%= animal.id %>">Delete</a>
+                        <hr>
+                        <% } %>
+                </div>
+               
+            </div>
+    
+            <div class="rightside">
+                <h2>Add a New Animal</h2><br>
+                <div class="button">
+                    <a href="/animal/new">Create New Animal</a>
+                </div>
+    
+            </div>
+    
+            <div class="foot">
+                <h3>Navigation</h3>
+                <div class="button">
+                    <a href="/details/:id">Details</a>
+                </div>
+                <div class="button">
+                    <a href="/edit/:id">Edit</a>
+                </div>
+                <div class="button">
+                    <a href="/animal">Home</a>
+                </div>
+
+            </div>
+    
+    
+        </div>
+        
+    </body>
+</html>

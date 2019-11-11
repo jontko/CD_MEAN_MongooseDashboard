@@ -1,0 +1,27 @@
+{
+  "name": "MongooseDashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jontko/MongooseDashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jontko/MongooseDashboard/issues"
+  },
+  "homepage": "https://github.com/jontko/MongooseDashboard#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.8"
+  },
+  "devDependencies": {},
+  "description": ""
+}
