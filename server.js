@@ -17,7 +17,7 @@ const AnimalSchema = new mongoose.Schema({
 mongoose.connect('mongodb://localhost/animals', {useNewUrlParser: true});
 
 app.use(express.static(__dirname + "/static"));
-app.use(express.urlencoded({extended: true})); //add this to cheat sheet 
+app.use(express.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
     Animal.find()
